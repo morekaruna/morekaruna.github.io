@@ -1,0 +1,570 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+/* General Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #fc8019;
+    color: white;
+}
+
+.navbar nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar nav a:hover {
+    color: #ffe8d0;
+}
+
+.signup-btn {
+    background-color: white;
+    color: #fc8019;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: #ffe8d0;
+    color: #fc8019;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #f5f5f5;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+}
+
+.hero-text input {
+    padding: 10px;
+    margin-top: 10px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.hero-text button {
+    padding: 10px 15px;
+    background-color: #fc8019;
+    color: white;
+    border: none;
+    margin-left: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero-text button:hover {
+    background-color: #e67115;
+    transform: scale(1.05);
+}
+
+.food_image {
+    max-width: 45%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.food_image:hover {
+    transform: scale(1.03);
+}
+
+/* Categories Section */
+.categories {
+    padding: 30px;
+}
+
+.categories h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.category-grid {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.category-card {
+    text-align: center;
+    width: 220px;
+    transition: transform 0.3s ease;
+}
+
+.category-card img {
+    width: 220px;
+    height: 220px;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card img:hover {
+    transform: scale(1.07);
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+}
+
+.category-card p {
+    margin-top: 10px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    background-color: #282c3f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .food_image {
+        max-width: 90%;
+        margin-top: 20px;
+    }
+
+    .category-grid {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .category-card {
+        width: 180px;
+    }
+
+    .category-card img {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+table{
+    width: 50%;
+    padding-top: 15px;
+}
+
+th{
+    margin-top: 15px;
+    color: burlywood;
+}
+
+td{
+    margin-top: 15px;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+=======
+/* General Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #fc8019;
+    color: white;
+}
+
+.navbar nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar nav a:hover {
+    color: #ffe8d0;
+}
+
+.signup-btn {
+    background-color: white;
+    color: #fc8019;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: #ffe8d0;
+    color: #fc8019;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #f5f5f5;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+}
+
+.hero-text input {
+    padding: 10px;
+    margin-top: 10px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.hero-text button {
+    padding: 10px 15px;
+    background-color: #fc8019;
+    color: white;
+    border: none;
+    margin-left: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero-text button:hover {
+    background-color: #e67115;
+    transform: scale(1.05);
+}
+
+.food_image {
+    max-width: 45%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.food_image:hover {
+    transform: scale(1.03);
+}
+
+/* Categories Section */
+.categories {
+    padding: 30px;
+}
+
+.categories h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.category-grid {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.category-card {
+    text-align: center;
+    width: 220px;
+    transition: transform 0.3s ease;
+}
+
+.category-card img {
+    width: 220px;
+    height: 220px;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card img:hover {
+    transform: scale(1.07);
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+}
+
+.category-card p {
+    margin-top: 10px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    background-color: #282c3f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .food_image {
+        max-width: 90%;
+        margin-top: 20px;
+    }
+
+    .category-grid {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .category-card {
+        width: 180px;
+    }
+
+    .category-card img {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+table{
+    width: 50%;
+    padding-top: 15px;
+}
+
+th{
+    margin-top: 15px;
+    color: burlywood;
+}
+
+td{
+    margin-top: 15px;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+>>>>>>> db538e2b6ff822977afc2b3d9a70846a05d5e681
+}
+=======
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #fc8019;
+    color: white;
+}
+
+.navbar nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar nav a:hover {
+    color: #ffe8d0;
+}
+
+.signup-btn {
+    background-color: white;
+    color: #fc8019;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: #ffe8d0;
+    color: #fc8019;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #f5f5f5;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+}
+
+.hero-text input {
+    padding: 10px;
+    margin-top: 10px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.hero-text button {
+    padding: 10px 15px;
+    background-color: #fc8019;
+    color: white;
+    border: none;
+    margin-left: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero-text button:hover {
+    background-color: #e67115;
+    transform: scale(1.05);
+}
+
+.food_image {
+    max-width: 45%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.food_image:hover {
+    transform: scale(1.03);
+}
+
+.categories {
+    padding: 30px;
+}
+
+.categories h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.category-grid {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.category-card {
+    text-align: center;
+    width: 220px;
+    transition: transform 0.3s ease;
+}
+
+.category-card img {
+    width: 220px;
+    height: 220px;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-card img:hover {
+    transform: scale(1.07);
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+}
+
+.category-card p {
+    margin-top: 10px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-style: italic;
+}
+
+footer {
+    background-color: #282c3f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .food_image {
+        max-width: 90%;
+        margin-top: 20px;
+    }
+
+    .category-grid {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .category-card {
+        width: 180px;
+    }
+
+    .category-card img {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+table{
+    width: 50%;
+    padding-top: 15px;
+}
+
+th{
+    margin-top: 15px;
+    color: burlywood;
+}
+
+td{
+    margin-top: 15px;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+
+}
+>>>>>>> afc574fb717846fc1b6b13a90bac766990967a03
